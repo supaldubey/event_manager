@@ -1,6 +1,13 @@
 # event_manager
 A simple event manager for Spring Apps
 
+# What
+Simple event manager, which would work in context of a single DB transaction / single thread call.
+
+# What it is not
+It is not meant for distributed / multiple JVMs as of now. This is just a smart way to have multiple handlers for a single event and decoupling services on a single JVM.
+It could be easily extended for distributed systems by including a Queue and changing implementations for EventRegistry and EventManager to read / write from / to the Queue.  
+
 # Why
 The idea is to create a simple Event manager for apps that use Spring. The framework provides 
 decoupled biding between event generator and event listener.
