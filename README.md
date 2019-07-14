@@ -15,9 +15,10 @@ decoupled biding between event generator and event listener.
 For a lot of production apps, there are scenarios where you might want to perform certain action of same triggers.
 For example: 
 
- - Once a user is created, create an audit entry in db
- - What if it now after new app, app needs to update referer (that connection has joined)
- - What if it needs to perform another DB operation in the same transaction?
+ - Once a user is created, persist information in DB (Current state)
+ - Maybe now system needs to create an audit entry in db 
+ - And probably as next requirement, app needs to update referer (that connection has joined)
+ - And in future needs to perform another DB operation in the same transaction?
  
 Refactors for such cases are usually painful, and hence event based models work a lot better.
 
