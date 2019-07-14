@@ -1,7 +1,7 @@
 # event_manager
 A simple event manager for Spring Apps
 
-#Why
+# Why
 The idea is to create a simple Event manager for apps that use Spring. The framework provides 
 decoupled biding between event generator and event listener.
 
@@ -16,7 +16,7 @@ Refactors for such cases are usually painful, and hence event based models work 
 
 With above context / idea below is a toy implementation for such a simple event management system.  
 
-#Why Spring
+# Why Spring
 Because its one of the most used frameworks / libraries in Java ecosystem. Also due to dependency Injection,  you could easily have self registering event listeners.
 Which removes dependency of remembering to register new event listener every time you create one.  
 
