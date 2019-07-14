@@ -1,7 +1,6 @@
 package in.cubestack.lib.handler;
 
 import in.cubestack.lib.ResultListener;
-import in.cubestack.lib.event.EventRegistry;
 import in.cubestack.lib.event.TestEvent;
 import in.cubestack.lib.event.core.EventConsumer;
 import in.cubestack.lib.event.handler.EventHandler;
@@ -11,8 +10,7 @@ public class TestEventHandler extends EventHandler<TestEvent> {
 
     private final ResultListener resultListener;
 
-    public TestEventHandler(EventRegistry eventRegistry, ResultListener resultListener) {
-        super(eventRegistry);
+    public TestEventHandler(ResultListener resultListener) {
         this.resultListener = resultListener;
     }
 
